@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const AdminDashboard = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState<any>(null);
-  const [stats, setStats] = useState({
+  const [stats, _setStats] = useState({
     totalUsers: 0,
     totalServiceProviders: 0,
     pendingApprovals: 0,

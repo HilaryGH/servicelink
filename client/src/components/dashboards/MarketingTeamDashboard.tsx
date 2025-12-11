@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const MarketingTeamDashboard = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState<any>(null);
-  const [stats, setStats] = useState({
+  const [_user, setUser] = useState<any>(null);
+  const [stats, _setStats] = useState({
     campaigns: 0,
     activePromotions: 0,
     emailSent: 0,

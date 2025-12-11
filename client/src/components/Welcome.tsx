@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Welcome = () => {
-  const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 

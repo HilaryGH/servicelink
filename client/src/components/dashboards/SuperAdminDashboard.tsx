@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const SuperAdminDashboard = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState<any>(null);
-  const [stats, setStats] = useState({
+  const [_user, setUser] = useState<any>(null);
+  const [stats, _setStats] = useState({
     totalUsers: 0,
     totalAdmins: 0,
     systemHealth: 'Good',

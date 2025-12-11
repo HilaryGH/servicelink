@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const CustomerSupportDashboard = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState<any>(null);
-  const [stats, setStats] = useState({
+  const [_user, setUser] = useState<any>(null);
+  const [stats, _setStats] = useState({
     openTickets: 0,
     resolvedToday: 0,
     averageResponseTime: '0 min',
