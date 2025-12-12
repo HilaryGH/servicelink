@@ -78,6 +78,16 @@ export const authAPI = {
     const response = await api.get('/profile');
     return response.data;
   },
+  
+  loginWithGoogle: async (token: string) => {
+    const response = await api.post('/auth/google', { token });
+    return response.data;
+  },
+  
+  loginWithFacebook: async (token: string) => {
+    const response = await api.post('/auth/facebook', { token });
+    return response.data;
+  },
 };
 
 export default api;

@@ -92,7 +92,7 @@ const Home = () => {
               fill="url(#gradient4)"
             />
           </svg>
-
+          
           {/* Right Side Accent Curve */}
           <svg 
             className="absolute bottom-1/4 right-0 w-1/2 h-full" 
